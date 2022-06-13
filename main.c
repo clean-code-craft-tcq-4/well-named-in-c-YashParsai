@@ -2,7 +2,9 @@
 #include <assert.h>
 #include "colorCoding.h"
 #include "testColorCode.h"
-int main() {
+
+int main() 
+{
     printReference();
     testNumberToPair(4, WHITE, BROWN);
     testNumberToPair(5, WHITE, SLATE);
