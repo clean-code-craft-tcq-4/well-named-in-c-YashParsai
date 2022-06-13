@@ -14,23 +14,23 @@ int numberOfMinorColors = sizeof(MinorColorNames) / sizeof(MinorColorNames[0]);
 void ColorPairToString(const ColorPair* colorPair, char* buffer)
 {
     sprintf(buffer, "%s %s",
-        MajorColorNames[colorPair->majorColor],
-        MinorColorNames[colorPair->minorColor]);
+        MajorColorNames[colorPair->major],
+        MinorColorNames[colorPair->minor]);
 }
 
 ColorPair GetColorFromPairNumber(int pairNumber)
 {
     ColorPair colorPair;
     int zeroBasedPairNumber = pairNumber - 1;
-    colorPair.majorColor = 
+    colorPair.major = 
         (enum MajorColor)(zeroBasedPairNumber / numberOfMinorColors);
-    colorPair.minorColor =
+    colorPair.minor =
         (enum MinorColor)(zeroBasedPairNumber % numberOfMinorColors);
     return colorPair;
 }
 
 int GetPairNumberFromColor(const ColorPair* colorPair)
 {
-    return colorPair->majorColor * numberOfMinorColors +
-            colorPair->minorColor + 1;
+    return colorPair->major * numberOfMinorColors +
+            colorPair->minor + 1;
 }
