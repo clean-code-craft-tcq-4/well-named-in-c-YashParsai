@@ -34,27 +34,3 @@ int GetPairNumberFromColor(const ColorPair* colorPair)
     return colorPair->majorColor * numberOfMinorColors +
             colorPair->minorColor + 1;
 }
-
-void printReference(void)
-{
-
-int majorCount = 0;
-int minorCount = 0;
-ColorPair colorPair;
-
-printf("==================color coding reference manual====================\n");
-printf("Pair No.\t\tmajor color\t\tminor color\n");
-for(; majorCount<=numberOfMajorColors; majorCount++)
-{
-	colorPair.majorColor = majorCount;
-	for(; minorCount<=numberOfMinorColors; minorCount++)
-	{
-		coloPair.minorColor = minorCount;
-		printf("%d\t\t",GetPairNumberFromColor(&colorPair));
-		printf("%s\t\t",MajorColorNames[majorCount]);
-		printf("%s\t\t\n",MinorColorNames[minorCount]);
-
-	}
-}
-
-}
