@@ -26,4 +26,5 @@ for(; majorCount<numberOfMajorColors; majorCount++)
 
    }
 }
+printf("==================================================================\n");
 }
