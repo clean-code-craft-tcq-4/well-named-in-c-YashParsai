@@ -14,10 +14,10 @@ ColorPair colorPair;
 
 printf("==================color coding reference manual====================\n");
 printf("Pair No.\t\tmajor color\t\tminor color\n");
-for(; majorCount<=numberOfMajorColors; majorCount++)
+for(; majorCount<numberOfMajorColors; majorCount++)
 {
    colorPair.majorColor = majorCount;
-   for(; minorCount<=numberOfMinorColors; minorCount++)
+   for(minorCount=0; minorCount<numberOfMinorColors; minorCount++)
    {
       colorPair.minorColor = minorCount;
       printf("%d\t\t",GetPairNumberFromColor(&colorPair));
