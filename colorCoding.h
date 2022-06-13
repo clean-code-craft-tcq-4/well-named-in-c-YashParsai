@@ -5,8 +5,8 @@ enum MinorColor {BLUE, ORANGE, GREEN, BROWN, SLATE};
 
 typedef struct 
 {
-    enum MajorColor majorColor;
-    enum MinorColor minorColor;
+    enum MajorColor major;
+    enum MinorColor minor;
 } ColorPair;
 
 void ColorPairToString(const ColorPair* colorPair, char* buffer);
