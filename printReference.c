@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "colorCoding.h"
+#include "printReference.h"
 
 extern int numberOfMajorColors;
 extern int numberOfMinorColors;
@@ -9,23 +10,23 @@ extern const char* MinorColorNames[];
 void printReference(void)
 {
 
-int majorCount = 0;
-int minorCount = 0;
-ColorPair colorPair;
+   int majorCount = 0;
+   int minorCount = 0;
+   ColorPair colorPair;
 
-printf("==================color coding reference manual====================\n");
-printf("Pair No.\tmajor color\tminor color\n");
-for(; majorCount<numberOfMajorColors; majorCount++)
-{
-   colorPair.majorColor = majorCount;
-   for(minorCount=0; minorCount<numberOfMinorColors; minorCount++)
+   printf("==================color coding reference manual====================\n");
+   printf("Pair No.\tmajor color\tminor color\n");
+   for(; majorCount<numberOfMajorColors; majorCount++)
    {
-      colorPair.minorColor = minorCount;
-      printf("%d\t\t",GetPairNumberFromColor(&colorPair));
-      printf("%s\t\t",MajorColorNames[majorCount]);
-      printf("%s\t\t\n",MinorColorNames[minorCount]);
+      colorPair.majorColor = majorCount;
+      for(minorCount=0; minorCount<numberOfMinorColors; minorCount++)
+      {
+         colorPair.minorColor = minorCount;
+         printf("%d\t\t",GetPairNumberFromColor(&colorPair));
+         printf("%s\t\t",MajorColorNames[majorCount]);
+         printf("%s\t\t\n",MinorColorNames[minorCount]);
 
+      }
    }
-}
-printf("==================================================================\n");
+   printf("==================================================================\n");
 }
