@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
+#include "testReference.h"
 #include "colorCoding.h"
 #include "testColorCode.h"
 
