@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <assert.h>
 #include "colorCoding.h"
-
+#include "testColorCode.h"
 int main() {
     printReference();
     testNumberToPair(4, WHITE, BROWN);
