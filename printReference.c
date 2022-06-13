@@ -13,7 +13,7 @@ int minorCount = 0;
 ColorPair colorPair;
 
 printf("==================color coding reference manual====================\n");
-printf("Pair No.\t\tmajor color\t\tminor color\n");
+printf("Pair No.\tmajor color\tminor color\n");
 for(; majorCount<numberOfMajorColors; majorCount++)
 {
    colorPair.majorColor = majorCount;
