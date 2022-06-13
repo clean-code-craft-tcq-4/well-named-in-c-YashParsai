@@ -2,6 +2,8 @@
 
 extern int numberOfMajorColors;
 extern int numberOfMinorColors;
+extern const char* MajorColorNames[];
+extern const char* MinorColorNames[];
 
 void printReference(void)
 {
