@@ -3,7 +3,7 @@
 #include "colorCoding.h"
 
 int main() {
-    printfReference();
+    printReference();
     testNumberToPair(4, WHITE, BROWN);
     testNumberToPair(5, WHITE, SLATE);
 
