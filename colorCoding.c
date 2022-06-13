@@ -1,4 +1,4 @@
-#include "colorCoding"
+#include "colorCoding.h"
 
 
 /************Variable declerations********************/
